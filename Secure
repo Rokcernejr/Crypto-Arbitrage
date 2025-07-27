@@ -1,0 +1,8 @@
+# Create dedicated user
+sudo useradd -m -s /bin/bash arbitrage
+sudo chown -R arbitrage:arbitrage /path/to/arbitrage-bot
+
+# Set strict permissions
+chmod 700 config/
+chmod 600 config/*
+chmod 700 logs/
