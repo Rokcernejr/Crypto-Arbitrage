@@ -1,0 +1,14 @@
+# Stop the bot
+pm2 stop arbitrage-bot
+
+# Backup current version
+cp -r /path/to/arbitrage-bot /path/to/arbitrage-bot.backup
+
+# Pull updates
+git pull origin main
+
+# Install new dependencies
+npm ci --only=production
+
+# Restart
+pm2 restart arbitrage-bot
