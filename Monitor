@@ -1,0 +1,8 @@
+# PM2 monitoring
+pm2 install pm2-logrotate
+pm2 set pm2-logrotate:max_size 10M
+pm2 set pm2-logrotate:retain 7
+
+# System monitoring (optional)
+# Install Prometheus node exporter
+# Configure Grafana dashboards
