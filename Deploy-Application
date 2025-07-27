@@ -1,0 +1,16 @@
+# Clone repository
+git clone https://github.com/rokcernejr/Crypto-Arbitrage.git
+cd Crypto-Arbitrage
+
+# Install dependencies
+npm ci --only=production
+
+# Setup environment
+cp .env.example .env
+# Edit .env with production values
+
+# Create directories
+mkdir -p config data logs
+
+# Set permissions
+chmod 755 start.sh
