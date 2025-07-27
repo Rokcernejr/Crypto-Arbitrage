@@ -1,0 +1,8 @@
+# Start application
+pm2 start server/index.js --name "arbitrage-bot"
+
+# Save PM2 configuration
+pm2 save
+
+# Setup PM2 to start on boot
+pm2 startup
